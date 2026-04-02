@@ -28,16 +28,16 @@ Three distinct shuffling strategies are used across the five MTGs to cover diffe
 
 | Strategy | MTGs | What it tests |
 |----------|------|---------------|
-| **Random shuffle** | MTG1 | General order-independence; edges of same source are fully scattered |
-| **Full reversal** | MTG2 | Parser reads lines bottom-to-top vs. top-to-bottom — catches array-based builders |
-| **Source grouping swap** | MTG3, MTG4 | Edges of the same source node appear non-consecutively in SI but are grouped in FI (or vice versa) — targets `dict` builders that might overwrite keys |
-| **Scattered multi-source** | MTG5 | A large graph with completely shuffled lines, ensuring no accidental ordering assumptions hold |
+| **Random shuffle** | MTG11 | General order-independence; edges of same source are fully scattered |
+| **Full reversal** | MTG12 | Parser reads lines bottom-to-top vs. top-to-bottom — catches array-based builders |
+| **Source grouping swap** | MTG13, MTG14 | Edges of the same source node appear non-consecutively in SI but are grouped in FI (or vice versa) — targets `dict` builders that might overwrite keys |
+| **Scattered multi-source** | MTG15 | A large graph with completely shuffled lines, ensuring no accidental ordering assumptions hold |
 
 ---
 
 ## 3. Creating the Test Graphs
 
-### MTG-Dijkstra-Permute-01 (MTG1)
+### MTG-Dijkstra-Permute-11 (MTG11)
 
 **Source Input (`SI.txt`)** — 7-node directed graph (A–G), same graph as MR1 MTG1, edges in natural source-alphabetical order:
 ```
@@ -73,7 +73,7 @@ Query: `start=A, end=G`, expected = **11**
 
 ---
 
-### MTG-Dijkstra-Permute-02 (MTG2)
+### MTG-Dijkstra-Permute-12 (MTG12)
 
 **Source Input (`SI.txt`)** — 6-node diamond graph (1–6), standard order:
 ```
@@ -105,7 +105,7 @@ Query: `start=1, end=6`, expected = **5**
 
 ---
 
-### MTG-Dijkstra-Permute-03 (MTG3)
+### MTG-Dijkstra-Permute-13 (MTG13)
 
 **Source Input (`SI.txt`)** — 6-node graph (P–T) with non-consecutive P-edges:
 ```
@@ -143,7 +143,7 @@ Query: `start=P, end=T`, expected = **6**
 
 ---
 
-### MTG-Dijkstra-Permute-04 (MTG4)
+### MTG-Dijkstra-Permute-14 (MTG14)
 
 **Source Input (`SI.txt`)** — 5-node graph (A–E) with interspersed A-edges:
 ```
@@ -178,11 +178,11 @@ Query: `start=A, end=E`, expected = **8**
 - In FI, C→D and D→E appear before any A-edge. A parser that requires source nodes to appear before their descendants (e.g., a streaming builder that skips forward references) would fail to link these edges into A's reachable subgraph.
 - In SI, A-edges are split across three non-adjacent lines. Correctly assembling all of A's edges from SI requires the parser to accumulate, not overwrite, entries for the same key.
 - The distinction between the optimal path (A→C→D→E = 8) and the two suboptimal paths (both cost 9) is small (1 unit). Any loss of an A-edge causes the algorithm to return 9 instead of 8 — detectable but not dramatically different, making this a precise test of correct construction.
-- MTG4 complements MTG3 by using a different graph topology (linear convergence instead of a hub) and a different grouping pattern (non-adjacent in SI, grouped in FI — the opposite direction from MTG3).
+- MTG14 complements MTG13 by using a different graph topology (linear convergence instead of a hub) and a different grouping pattern (non-adjacent in SI, grouped in FI — the opposite direction from MTG3).
 
 ---
 
-### MTG-Dijkstra-Permute-05 (MTG5)
+### MTG-Dijkstra-Permute-15 (MTG15)
 
 **Source Input (`SI.txt`)** — 8-node graph (1–8) in natural edge order:
 ```
@@ -226,7 +226,7 @@ Query: `start=1, end=8`, expected = **12**
 - With 10 edges and 8 nodes, this is the largest graph in the MR3 suite. The full shuffle places terminal edges (7→8=1, which is the last hop of the optimal path) at the very beginning of FI, while node 1's two outgoing edges appear at lines 4 and 7 — far apart and embedded among other nodes' edges.
 - The optimal path 1→2→4→5→7→8 spans 5 hops across 4 different source nodes (1, 2, 4, 5, 7). Every one of those source nodes has its edge appearing in a different position in FI compared to SI. A correct parser assembles all edges identically regardless of file order; a broken one will produce a subtly incomplete adjacency list.
 - The large graph also tests for performance-degrading bugs: if the parser iterates the full edge list for each node lookup (O(E) per node) rather than using a hash map, the ordering change would expose that inefficiency — though the primary check remains on correctness of the output distance.
-- MTG5 acts as a stress test that subsumes the concerns of MTG1–4 in a single, more complex scenario.
+- MTG15 acts as a stress test that subsumes the concerns of MTG11–14 in a single, more complex scenario.
 
 ---
 
@@ -236,19 +236,19 @@ Query: `start=1, end=8`, expected = **12**
 maichi/TEST/
 ├── MR3_creation.md          # This document
 └── MR3/
-    ├── MTG1/
+    ├── MTG11/
     │   ├── SI.txt           # 7-node A–G graph; edges in natural order; query A→G (distance 11)
     │   └── FI.txt           # Same 12 edges, randomly shuffled
-    ├── MTG2/
+    ├── MTG12/
     │   ├── SI.txt           # Diamond 1–6 graph; standard order; query 1→6 (distance 5)
     │   └── FI.txt           # Same 8 edges, fully reversed
-    ├── MTG3/
+    ├── MTG13/
     │   ├── SI.txt           # P–T graph; P-edges at lines 1,3,5 (non-consecutive); query P→T (distance 6)
     │   └── FI.txt           # Same 6 edges; P-edges grouped at lines 1,2,3
-    ├── MTG4/
+    ├── MTG14/
     │   ├── SI.txt           # A–E graph; A-edges at lines 1,3,6 (non-consecutive); query A→E (distance 8)
     │   └── FI.txt           # Same 6 edges; interior edges first, A-edges grouped at lines 4,5,6
-    └── MTG5/
+    └── MTG15/
         ├── SI.txt           # 8-node 1–8 graph; edges in natural order; query 1→8 (distance 12)
         └── FI.txt           # Same 10 edges, fully shuffled (terminal edges first)
 ```

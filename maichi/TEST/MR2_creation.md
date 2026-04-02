@@ -36,7 +36,7 @@ python dijkstra_algorithm.py MR2/MTGn/FI2.txt <mid>    <end>         # Follow-up
 
 ## 3. Creating the Test Graphs
 
-### MTG-Dijkstra-Subpath-01 (MTG1)
+### MTG-Dijkstra-Subpath-06 (MTG6)
 
 **Source Input (`SI.txt`)** — 7-node directed graph (A–G), reused from MR1 MTG1:
 ```
@@ -67,7 +67,7 @@ Query: `start=A, end=G` → SO path: `['A', 'D', 'E', 'G']`, distance **11**
 
 ---
 
-### MTG-Dijkstra-Subpath-02 (MTG2)
+### MTG-Dijkstra-Subpath-07 (MTG7)
 
 **Source Input (`SI.txt`)** — 6-node diamond graph, reused from MR1 MTG2:
 ```
@@ -96,7 +96,7 @@ Query: `start=1, end=6` → SO path: `['1', '3', '4', '6']`, distance **5**
 
 ---
 
-### MTG-Dijkstra-Subpath-03 (MTG3)
+### MTG-Dijkstra-Subpath-08 (MTG8)
 
 **Source Input (`SI.txt`)** — 6-node linear-branching graph (M–Q):
 ```
@@ -131,7 +131,7 @@ Path analysis:
 
 ---
 
-### MTG-Dijkstra-Subpath-04 (MTG4)
+### MTG-Dijkstra-Subpath-09 (MTG9)
 
 **Source Input (`SI.txt`)** — 7-node convergence graph (S–T):
 ```
@@ -167,7 +167,7 @@ Path analysis:
 
 ---
 
-### MTG-Dijkstra-Subpath-05 (MTG5)
+### MTG-Dijkstra-Subpath-10 (MTG10)
 
 **Source Input (`SI.txt`)** — 6-node fan-out graph (X–Y):
 ```
@@ -199,7 +199,7 @@ Path analysis:
 - The intermediate node A is the immediate successor of the source X. FI1 is therefore a trivial single-edge query — if the algorithm gets this wrong, it indicates a fundamental initialisation bug.
 - FI2 (A→Y) is itself a two-branch sub-problem (A→B→Y vs A→C→Y), requiring Dijkstra to correctly prefer the 6-cost route over the 7-cost route. This makes the follow-up a meaningful mini-test.
 - The large direct edge X→B = 10 serves as a decoy in the source execution; the algorithm must correctly prefer X→A = 3 despite B being reachable in one hop.
-- This MTG complements MTG4 by placing the intermediate at the first hop rather than the middle, covering a different structural position within the path.
+- This MTG complements MTG9 by placing the intermediate at the first hop rather than the middle, covering a different structural position within the path.
 
 ---
 
@@ -209,23 +209,23 @@ Path analysis:
 maichi/TEST/
 ├── MR2_creation.md          # This document
 └── MR2/
-    ├── MTG1/
+    ├── MTG6/
     │   ├── SI.txt           # 7-node A–G graph; query A→G (distance 11)
     │   ├── FI1.txt          # Same graph; query A→E (distance 8)
     │   └── FI2.txt          # Same graph; query E→G (distance 3)
-    ├── MTG2/
+    ├── MTG7/
     │   ├── SI.txt           # Diamond 1–6 graph; query 1→6 (distance 5)
     │   ├── FI1.txt          # Same graph; query 1→3 (distance 2)
     │   └── FI2.txt          # Same graph; query 3→6 (distance 3)
-    ├── MTG3/
+    ├── MTG8/
     │   ├── SI.txt           # M–Q graph; query M→Q (distance 8)
     │   ├── FI1.txt          # Same graph; query M→O (distance 3)
     │   └── FI2.txt          # Same graph; query O→Q (distance 5)
-    ├── MTG4/
+    ├── MTG9/
     │   ├── SI.txt           # S–T convergence graph; query S→T (distance 8)
     │   ├── FI1.txt          # Same graph; query S→C (distance 3)
     │   └── FI2.txt          # Same graph; query C→T (distance 5)
-    └── MTG5/
+    └── MTG10/
         ├── SI.txt           # X–Y fan-out graph; query X→Y (distance 9)
         ├── FI1.txt          # Same graph; query X→A (distance 3)
         └── FI2.txt          # Same graph; query A→Y (distance 6)

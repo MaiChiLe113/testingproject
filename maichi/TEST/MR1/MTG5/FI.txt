@@ -1,0 +1,7 @@
+A S 1
+C A 1
+T C 1
+B S 100
+T B 1
+D A 50
+T D 1

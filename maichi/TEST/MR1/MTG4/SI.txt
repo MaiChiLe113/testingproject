@@ -1,0 +1,5 @@
+X Y 4
+X Z 4
+Y W 3
+Z W 3
+W V 2

@@ -1,0 +1,6 @@
+M N 2
+M O 8
+N P 3
+N O 1
+O P 1
+P Q 4

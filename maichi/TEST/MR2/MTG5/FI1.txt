@@ -1,0 +1,6 @@
+X A 3
+A B 2
+A C 5
+B Y 4
+C Y 2
+X B 10

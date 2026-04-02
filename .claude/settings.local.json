@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG1/SI.txt A G)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG1/FI1.txt A E)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG1/FI2.txt E G)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG3/SI.txt M Q)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG3/FI1.txt M O)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG3/FI2.txt O Q)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG4/SI.txt S T)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG4/FI1.txt S C)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG4/FI2.txt C T)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG5/SI.txt X Y)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG5/FI1.txt X A)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR2/MTG5/FI2.txt A Y)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG1/SI.txt A G)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG1/FI.txt A G)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG2/SI.txt 1 6)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG2/FI.txt 1 6)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG3/SI.txt P T)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG3/FI.txt P T)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG4/SI.txt A E)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG4/FI.txt A E)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG5/SI.txt 1 8)",
+      "Bash(python maichi/SUT/dijkstra_algorithm.py maichi/TEST/MR3/MTG5/FI.txt 1 8)"
+    ]
+  }
+}

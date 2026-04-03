@@ -1,0 +1,902 @@
+Mutant ID,MTG ID,Status,Notes,Actual Output SI,Actual Output FI1,Actual Output FI2,Actual Output Relation,MR Verdict
+M1,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A', 'D', 'E', 'G']
+Total distance: 11.0","Shortest path: ['A', 'D', 'E']
+Total distance: 8.0","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M1,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 5.0","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3', '4', '6']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M1,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M', 'N', 'O', 'P', 'Q']
+Total distance: 8.0","Shortest path: ['M', 'N', 'O']
+Total distance: 3.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M1,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S', 'A', 'C', 'D', 'T']
+Total distance: 8.0","Shortest path: ['S', 'A', 'C']
+Total distance: 3.0","Shortest path: ['C', 'D', 'T']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M1,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X', 'A', 'B', 'Y']
+Total distance: 9.0","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M2,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M2,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M2,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M2,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M2,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M3,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M3,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M3,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M3,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M3,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M4,MTG6,Not Equivalent,"SI=17.0, FI1=9.0, FI2=3.0","Shortest path: ['A', 'B', 'C', 'D', 'F', 'G']
+Total distance: 17.0","Shortest path: ['A', 'B', 'C', 'E']
+Total distance: 9.0","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M4,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1', '2', '4', '6']
+Total distance: 5.0","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3', '4', '6']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M4,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M', 'N', 'O', 'P', 'Q']
+Total distance: 8.0","Shortest path: ['M', 'N', 'O']
+Total distance: 3.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M4,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S', 'B', 'C', 'D', 'T']
+Total distance: 8.0","Shortest path: ['S', 'A', 'C']
+Total distance: 3.0","Shortest path: ['C', 'D', 'T']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M4,MTG10,Not Equivalent,"SI=10.0, FI1=3.0, FI2=7.0","Shortest path: ['X', 'A', 'C', 'Y']
+Total distance: 10.0","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A', 'C', 'Y']
+Total distance: 7.0",source distance == FI1 distance + FI2 distance,PASS
+M5,MTG6,Not Equivalent,Output did not contain a parseable distance,"Shortest path: ['A', 'D', 'E', 'F', 'G']
+Total distance: -17.0","Shortest path: ['A', 'D', 'E']
+Total distance: -8.0","Shortest path: ['E', 'F', 'G']
+Total distance: -9.0",ERROR - could not parse distance,ERROR
+M5,MTG7,Not Equivalent,Output did not contain a parseable distance,"Shortest path: ['1', '2', '5', '6']
+Total distance: -12.0","Shortest path: ['1', '3']
+Total distance: -2.0","Shortest path: ['3', '5', '6']
+Total distance: -6.0",ERROR - could not parse distance,ERROR
+M5,MTG8,Not Equivalent,Output did not contain a parseable distance,"Shortest path: ['M', 'O', 'P', 'Q']
+Total distance: -13.0","Shortest path: ['M', 'O']
+Total distance: -8.0","Shortest path: ['O', 'P', 'Q']
+Total distance: -5.0",ERROR - could not parse distance,ERROR
+M5,MTG9,Not Equivalent,Output did not contain a parseable distance,"Shortest path: ['S', 'B', 'C', 'D', 'T']
+Total distance: -11.0","Shortest path: ['S', 'B', 'C']
+Total distance: -6.0","Shortest path: ['C', 'D', 'T']
+Total distance: -5.0",ERROR - could not parse distance,ERROR
+M5,MTG10,Not Equivalent,Output did not contain a parseable distance,"Shortest path: ['X', 'B', 'Y']
+Total distance: -14.0","Shortest path: ['X', 'A']
+Total distance: -3.0","Shortest path: ['A', 'C', 'Y']
+Total distance: -7.0",ERROR - could not parse distance,ERROR
+M6,MTG6,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['A', 'B', 'E', 'G']
+Total distance: 0.0","Shortest path: ['A', 'B', 'E']
+Total distance: 0.0","Shortest path: ['E', 'G']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M6,MTG7,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['1', '2', '4', '6']
+Total distance: 0.0","Shortest path: ['1', '3']
+Total distance: 0.0","Shortest path: ['3', '4', '6']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M6,MTG8,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['M', 'O', 'P', 'Q']
+Total distance: 0.0","Shortest path: ['M', 'O']
+Total distance: 0.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M6,MTG9,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['S', 'B', 'C', 'D', 'T']
+Total distance: 0.0","Shortest path: ['S', 'B', 'C']
+Total distance: 0.0","Shortest path: ['C', 'D', 'T']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M6,MTG10,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['X', 'B', 'Y']
+Total distance: 0.0","Shortest path: ['X', 'A']
+Total distance: 0.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M7,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M7,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M7,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M7,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M7,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M8,MTG6,Not Equivalent,"SI=6.0, FI1=8.0, FI2=6.0","Shortest path: ['A', 'B', 'E', 'G']
+Total distance: 6.0","Shortest path: ['A', 'B', 'E']
+Total distance: 8.0","Shortest path: ['E', 'G']
+Total distance: 6.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M8,MTG7,Not Equivalent,"SI=4.0, FI1=4.0, FI2=4.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 4.0","Shortest path: ['1', '3']
+Total distance: 4.0","Shortest path: ['3', '4', '6']
+Total distance: 4.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M8,MTG8,Not Equivalent,"SI=8.0, FI1=2.0, FI2=8.0","Shortest path: ['M', 'N', 'O', 'P', 'Q']
+Total distance: 8.0","Shortest path: ['M', 'N', 'O']
+Total distance: 2.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 8.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M8,MTG9,Not Equivalent,"SI=4.0, FI1=4.0, FI2=4.0","Shortest path: ['S', 'A', 'C', 'D', 'T']
+Total distance: 4.0","Shortest path: ['S', 'A', 'C']
+Total distance: 4.0","Shortest path: ['C', 'D', 'T']
+Total distance: 4.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M8,MTG10,Not Equivalent,"SI=8.0, FI1=6.0, FI2=8.0","Shortest path: ['X', 'A', 'B', 'Y']
+Total distance: 8.0","Shortest path: ['X', 'A']
+Total distance: 6.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 8.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M9,MTG6,Not Equivalent,"SI=14.0, FI1=10.0, FI2=4.0","Shortest path: ['A', 'D', 'E', 'G']
+Total distance: 14.0","Shortest path: ['A', 'D', 'E']
+Total distance: 10.0","Shortest path: ['E', 'G']
+Total distance: 4.0",source distance == FI1 distance + FI2 distance,PASS
+M9,MTG7,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 8.0","Shortest path: ['1', '3']
+Total distance: 3.0","Shortest path: ['3', '4', '6']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M9,MTG8,Not Equivalent,"SI=12.0, FI1=5.0, FI2=7.0","Shortest path: ['M', 'N', 'P', 'Q']
+Total distance: 12.0","Shortest path: ['M', 'N', 'O']
+Total distance: 5.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 7.0",source distance == FI1 distance + FI2 distance,PASS
+M9,MTG9,Not Equivalent,"SI=12.0, FI1=5.0, FI2=7.0","Shortest path: ['S', 'A', 'C', 'D', 'T']
+Total distance: 12.0","Shortest path: ['S', 'A', 'C']
+Total distance: 5.0","Shortest path: ['C', 'D', 'T']
+Total distance: 7.0",source distance == FI1 distance + FI2 distance,PASS
+M9,MTG10,Not Equivalent,"SI=12.0, FI1=4.0, FI2=8.0","Shortest path: ['X', 'A', 'B', 'Y']
+Total distance: 12.0","Shortest path: ['X', 'A']
+Total distance: 4.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 8.0",source distance == FI1 distance + FI2 distance,PASS
+M10,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M10,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M10,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M10,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M10,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M11,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M11,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M11,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M11,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M11,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M12,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M12,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M12,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M12,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M12,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M13,,Equivalent,Equivalent mutant - skipped,,,,,SKIPPED
+M14,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E', 'G']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M14,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1', '3']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M14,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M', 'O']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M14,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M14,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X', 'A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M15,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E', 'G']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M15,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1', '3']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M15,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M', 'O']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M15,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M15,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X', 'A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M16,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A']
+Total distance: 11.0","Shortest path: ['A']
+Total distance: 8.0","Shortest path: ['E']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M16,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1']
+Total distance: 5.0","Shortest path: ['1']
+Total distance: 2.0","Shortest path: ['3']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M16,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M']
+Total distance: 8.0","Shortest path: ['M']
+Total distance: 3.0","Shortest path: ['O']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M16,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S']
+Total distance: 8.0","Shortest path: ['S']
+Total distance: 3.0","Shortest path: ['C']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M16,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X']
+Total distance: 9.0","Shortest path: ['X']
+Total distance: 3.0","Shortest path: ['A']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M17,MTG6,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M17,MTG7,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M17,MTG8,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M17,MTG9,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M17,MTG10,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M18,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A']
+Total distance: 11.0","Shortest path: ['A', 'E']
+Total distance: 8.0","Shortest path: ['E']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M18,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1']
+Total distance: 5.0","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M18,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M']
+Total distance: 8.0","Shortest path: ['M', 'O']
+Total distance: 3.0","Shortest path: ['O']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M18,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S']
+Total distance: 8.0","Shortest path: ['S', 'C']
+Total distance: 3.0","Shortest path: ['C']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M18,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X']
+Total distance: 9.0","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M19,,Equivalent,Equivalent mutant - skipped,,,,,SKIPPED
+M20,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=3.0","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M20,MTG7,Not Equivalent,"SI=inf, FI1=2.0, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M20,MTG8,Not Equivalent,"SI=inf, FI1=8.0, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M', 'O']
+Total distance: 8.0","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M20,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M20,MTG10,Not Equivalent,"SI=inf, FI1=3.0, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M21,MTG6,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['A']
+Total distance: 0","Shortest path: ['A']
+Total distance: 0","Shortest path: ['E']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M21,MTG7,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['1']
+Total distance: 0","Shortest path: ['1']
+Total distance: 0","Shortest path: ['3']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M21,MTG8,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['M']
+Total distance: 0","Shortest path: ['M']
+Total distance: 0","Shortest path: ['O']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M21,MTG9,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['S']
+Total distance: 0","Shortest path: ['S']
+Total distance: 0","Shortest path: ['C']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M21,MTG10,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['X']
+Total distance: 0","Shortest path: ['X']
+Total distance: 0","Shortest path: ['A']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M22,MTG6,Not Equivalent,"SI=12.0, FI1=9.0, FI2=4.0","Shortest path: ['A', 'D', 'E', 'G']
+Total distance: 12.0","Shortest path: ['A', 'D', 'E']
+Total distance: 9.0","Shortest path: ['E', 'G']
+Total distance: 4.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M22,MTG7,Not Equivalent,"SI=6.0, FI1=3.0, FI2=4.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 6.0","Shortest path: ['1', '3']
+Total distance: 3.0","Shortest path: ['3', '4', '6']
+Total distance: 4.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M22,MTG8,Not Equivalent,"SI=9.0, FI1=4.0, FI2=6.0","Shortest path: ['M', 'N', 'O', 'P', 'Q']
+Total distance: 9.0","Shortest path: ['M', 'N', 'O']
+Total distance: 4.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 6.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M22,MTG9,Not Equivalent,"SI=9.0, FI1=4.0, FI2=6.0","Shortest path: ['S', 'A', 'C', 'D', 'T']
+Total distance: 9.0","Shortest path: ['S', 'A', 'C']
+Total distance: 4.0","Shortest path: ['C', 'D', 'T']
+Total distance: 6.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M22,MTG10,Not Equivalent,"SI=10.0, FI1=4.0, FI2=7.0","Shortest path: ['X', 'A', 'B', 'Y']
+Total distance: 10.0","Shortest path: ['X', 'A']
+Total distance: 4.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 7.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M23,MTG6,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['A']
+Total distance: 0","Shortest path: ['A']
+Total distance: 0","Shortest path: ['E']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M23,MTG7,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['1']
+Total distance: 0","Shortest path: ['1']
+Total distance: 0","Shortest path: ['3']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M23,MTG8,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['M']
+Total distance: 0","Shortest path: ['M']
+Total distance: 0","Shortest path: ['O']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M23,MTG9,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['S']
+Total distance: 0","Shortest path: ['S']
+Total distance: 0","Shortest path: ['C']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M23,MTG10,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['X']
+Total distance: 0","Shortest path: ['X']
+Total distance: 0","Shortest path: ['A']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M24,MTG6,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M24,MTG7,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M24,MTG8,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M24,MTG9,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M24,MTG10,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M25,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M25,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M25,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M25,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M25,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M26,MTG6,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M26,MTG7,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M26,MTG8,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M26,MTG9,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M26,MTG10,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M27,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M27,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M27,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M27,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M27,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M28,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M28,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M28,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M28,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M28,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M29,MTG6,Not Equivalent,Output did not contain a parseable distance,"Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'G'","Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'G'","Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'G'",ERROR - could not parse distance,ERROR
+M29,MTG7,Not Equivalent,Output did not contain a parseable distance,"Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: '6'","Shortest path: ['1', '3']
+Total distance: 2.0","Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: '6'",ERROR - could not parse distance,ERROR
+M29,MTG8,Not Equivalent,Output did not contain a parseable distance,"Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'Q'","Shortest path: ['M', 'N', 'O']
+Total distance: 3.0","Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'Q'",ERROR - could not parse distance,ERROR
+M29,MTG9,Not Equivalent,Output did not contain a parseable distance,"Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'T'","Shortest path: ['S', 'A', 'C']
+Total distance: 3.0","Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'T'",ERROR - could not parse distance,ERROR
+M29,MTG10,Not Equivalent,Output did not contain a parseable distance,"Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'Y'","Shortest path: ['X', 'A']
+Total distance: 3.0","Traceback (most recent call last):
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 68, in <module>
+    main()
+    ~~~~^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 63, in main
+    path, distance = graph.shortest_path(args.start, args.end)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\code\testingproject\maichi\MUTANTS\mutant29.py"", line 38, in shortest_path
+    if new_path < distance_from_start[neighbor]:
+                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'Y'",ERROR - could not parse distance,ERROR
+M30,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M30,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M30,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M30,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M30,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M31,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A', 'G', 'E', 'D']
+Total distance: 11.0","Shortest path: ['A', 'E', 'D']
+Total distance: 8.0","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M31,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1', '6', '4', '3']
+Total distance: 5.0","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3', '6', '4']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M31,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M', 'Q', 'P', 'O', 'N']
+Total distance: 8.0","Shortest path: ['M', 'O', 'N']
+Total distance: 3.0","Shortest path: ['O', 'Q', 'P']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M31,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S', 'T', 'D', 'C', 'A']
+Total distance: 8.0","Shortest path: ['S', 'C', 'A']
+Total distance: 3.0","Shortest path: ['C', 'T', 'D']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M31,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X', 'Y', 'B', 'A']
+Total distance: 9.0","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A', 'Y', 'B']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M32,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['D', 'E', 'G']
+Total distance: 11.0","Shortest path: ['D', 'E']
+Total distance: 8.0","Shortest path: ['G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M32,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['3', '4', '6']
+Total distance: 5.0","Shortest path: ['3']
+Total distance: 2.0","Shortest path: ['4', '6']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M32,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['N', 'O', 'P', 'Q']
+Total distance: 8.0","Shortest path: ['N', 'O']
+Total distance: 3.0","Shortest path: ['P', 'Q']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M32,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['A', 'C', 'D', 'T']
+Total distance: 8.0","Shortest path: ['A', 'C']
+Total distance: 3.0","Shortest path: ['D', 'T']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M32,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 9.0","Shortest path: ['A']
+Total distance: 3.0","Shortest path: ['B', 'Y']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M33,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['G', 'D', 'E', 'G']
+Total distance: 11.0","Shortest path: ['E', 'D', 'E']
+Total distance: 8.0","Shortest path: ['G', 'G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M33,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['6', '3', '4', '6']
+Total distance: 5.0","Shortest path: ['3', '3']
+Total distance: 2.0","Shortest path: ['6', '4', '6']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M33,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['Q', 'N', 'O', 'P', 'Q']
+Total distance: 8.0","Shortest path: ['O', 'N', 'O']
+Total distance: 3.0","Shortest path: ['Q', 'P', 'Q']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M33,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['T', 'A', 'C', 'D', 'T']
+Total distance: 8.0","Shortest path: ['C', 'A', 'C']
+Total distance: 3.0","Shortest path: ['T', 'D', 'T']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M33,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['Y', 'A', 'B', 'Y']
+Total distance: 9.0","Shortest path: ['A', 'A']
+Total distance: 3.0","Shortest path: ['Y', 'B', 'Y']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M34,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A']
+Total distance: 11.0","Shortest path: ['A']
+Total distance: 8.0","Shortest path: ['E']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M34,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1']
+Total distance: 5.0","Shortest path: ['1']
+Total distance: 2.0","Shortest path: ['3']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M34,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M']
+Total distance: 8.0","Shortest path: ['M']
+Total distance: 3.0","Shortest path: ['O']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M34,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S']
+Total distance: 8.0","Shortest path: ['S']
+Total distance: 3.0","Shortest path: ['C']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M34,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X']
+Total distance: 9.0","Shortest path: ['X']
+Total distance: 3.0","Shortest path: ['A']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M35,MTG6,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['A', 'D', 'E', 'G']
+Total distance: 0","Shortest path: ['A', 'D', 'E']
+Total distance: 0","Shortest path: ['E', 'G']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M35,MTG7,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 0","Shortest path: ['1', '3']
+Total distance: 0","Shortest path: ['3', '4', '6']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M35,MTG8,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['M', 'N', 'O', 'P', 'Q']
+Total distance: 0","Shortest path: ['M', 'N', 'O']
+Total distance: 0","Shortest path: ['O', 'P', 'Q']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M35,MTG9,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['S', 'A', 'C', 'D', 'T']
+Total distance: 0","Shortest path: ['S', 'A', 'C']
+Total distance: 0","Shortest path: ['C', 'D', 'T']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M35,MTG10,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['X', 'A', 'B', 'Y']
+Total distance: 0","Shortest path: ['X', 'A']
+Total distance: 0","Shortest path: ['A', 'B', 'Y']
+Total distance: 0",source distance == FI1 distance + FI2 distance,PASS
+M36,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A']
+Total distance: 11.0","Shortest path: ['A']
+Total distance: 8.0","Shortest path: ['E']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M36,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1']
+Total distance: 5.0","Shortest path: ['1']
+Total distance: 2.0","Shortest path: ['3']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M36,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M']
+Total distance: 8.0","Shortest path: ['M']
+Total distance: 3.0","Shortest path: ['O']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M36,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S']
+Total distance: 8.0","Shortest path: ['S']
+Total distance: 3.0","Shortest path: ['C']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M36,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X']
+Total distance: 9.0","Shortest path: ['X']
+Total distance: 3.0","Shortest path: ['A']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M37,MTG6,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M37,MTG7,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M37,MTG8,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M37,MTG9,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M37,MTG10,Not Equivalent,"Timed out on SI, FI1, FI2",TIMEOUT,TIMEOUT,TIMEOUT,"TIMEOUT - could not compare (SI, FI1, FI2)",TIMEOUT
+M38,MTG6,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['A', 'B', 'E', 'G']
+Total distance: 0.0","Shortest path: ['A', 'C', 'E']
+Total distance: 0.0","Shortest path: ['E', 'G']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M38,MTG7,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 0.0","Shortest path: ['1', '3']
+Total distance: 0.0","Shortest path: ['3', '5', '6']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M38,MTG8,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['M', 'O', 'P', 'Q']
+Total distance: 0.0","Shortest path: ['M', 'O']
+Total distance: 0.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M38,MTG9,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['S', 'A', 'D', 'T']
+Total distance: 0.0","Shortest path: ['S', 'B', 'C']
+Total distance: 0.0","Shortest path: ['C', 'D', 'T']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M38,MTG10,Not Equivalent,"SI=0.0, FI1=0.0, FI2=0.0","Shortest path: ['X', 'B', 'Y']
+Total distance: 0.0","Shortest path: ['X', 'A']
+Total distance: 0.0","Shortest path: ['A', 'C', 'Y']
+Total distance: 0.0",source distance == FI1 distance + FI2 distance,PASS
+M39,MTG6,Not Equivalent,"SI=-inf, FI1=-inf, FI2=-inf","Shortest path: ['A']
+Total distance: -inf","Shortest path: ['A']
+Total distance: -inf","Shortest path: ['E']
+Total distance: -inf",source distance == FI1 distance + FI2 distance,PASS
+M39,MTG7,Not Equivalent,"SI=-inf, FI1=-inf, FI2=-inf","Shortest path: ['1']
+Total distance: -inf","Shortest path: ['1']
+Total distance: -inf","Shortest path: ['3']
+Total distance: -inf",source distance == FI1 distance + FI2 distance,PASS
+M39,MTG8,Not Equivalent,"SI=-inf, FI1=-inf, FI2=-inf","Shortest path: ['M']
+Total distance: -inf","Shortest path: ['M']
+Total distance: -inf","Shortest path: ['O']
+Total distance: -inf",source distance == FI1 distance + FI2 distance,PASS
+M39,MTG9,Not Equivalent,"SI=-inf, FI1=-inf, FI2=-inf","Shortest path: ['S']
+Total distance: -inf","Shortest path: ['S']
+Total distance: -inf","Shortest path: ['C']
+Total distance: -inf",source distance == FI1 distance + FI2 distance,PASS
+M39,MTG10,Not Equivalent,"SI=-inf, FI1=-inf, FI2=-inf","Shortest path: ['X']
+Total distance: -inf","Shortest path: ['X']
+Total distance: -inf","Shortest path: ['A']
+Total distance: -inf",source distance == FI1 distance + FI2 distance,PASS
+M40,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M40,MTG7,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M40,MTG8,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M40,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M40,MTG10,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M41,MTG6,Not Equivalent,"SI=inf, FI1=inf, FI2=3.0","Shortest path: ['A']
+Total distance: inf","Shortest path: ['A']
+Total distance: inf","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M41,MTG7,Not Equivalent,"SI=inf, FI1=2.0, FI2=inf","Shortest path: ['1']
+Total distance: inf","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M41,MTG8,Not Equivalent,"SI=inf, FI1=8.0, FI2=inf","Shortest path: ['M']
+Total distance: inf","Shortest path: ['M', 'O']
+Total distance: 8.0","Shortest path: ['O']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M41,MTG9,Not Equivalent,"SI=inf, FI1=inf, FI2=inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['S']
+Total distance: inf","Shortest path: ['C']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M41,MTG10,Not Equivalent,"SI=inf, FI1=3.0, FI2=inf","Shortest path: ['X']
+Total distance: inf","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A']
+Total distance: inf",source distance == FI1 distance + FI2 distance,PASS
+M42,MTG6,Not Equivalent,"SI=3.0, FI1=4.0, FI2=3.0","Shortest path: ['A', 'B', 'E', 'G']
+Total distance: 3.0","Shortest path: ['A', 'B', 'E']
+Total distance: 4.0","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M42,MTG7,Not Equivalent,"SI=2.0, FI1=2.0, FI2=2.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 2.0","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3', '4', '6']
+Total distance: 2.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M42,MTG8,Not Equivalent,"SI=4.0, FI1=1.0, FI2=4.0","Shortest path: ['M', 'N', 'O', 'P', 'Q']
+Total distance: 4.0","Shortest path: ['M', 'N', 'O']
+Total distance: 1.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 4.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M42,MTG9,Not Equivalent,"SI=2.0, FI1=2.0, FI2=2.0","Shortest path: ['S', 'A', 'C', 'D', 'T']
+Total distance: 2.0","Shortest path: ['S', 'A', 'C']
+Total distance: 2.0","Shortest path: ['C', 'D', 'T']
+Total distance: 2.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M42,MTG10,Not Equivalent,"SI=4.0, FI1=3.0, FI2=4.0","Shortest path: ['X', 'A', 'B', 'Y']
+Total distance: 4.0","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 4.0",source distance ≠ FI1 distance + FI2 distance,FAIL
+M43,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A', 'G']
+Total distance: 11.0","Shortest path: ['A', 'E']
+Total distance: 8.0","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M43,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1', '6']
+Total distance: 5.0","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3', '6']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M43,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M', 'Q']
+Total distance: 8.0","Shortest path: ['M', 'O']
+Total distance: 3.0","Shortest path: ['O', 'Q']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M43,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S', 'T']
+Total distance: 8.0","Shortest path: ['S', 'C']
+Total distance: 3.0","Shortest path: ['C', 'T']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M43,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X', 'Y']
+Total distance: 9.0","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A', 'Y']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS
+M44,MTG6,Not Equivalent,"SI=3.0, FI1=2.0, FI2=1.0","Shortest path: ['A', 'D', 'F', 'G']
+Total distance: 3","Shortest path: ['A', 'D', 'E']
+Total distance: 2","Shortest path: ['E', 'G']
+Total distance: 1",source distance == FI1 distance + FI2 distance,PASS
+M44,MTG7,Not Equivalent,"SI=3.0, FI1=1.0, FI2=2.0","Shortest path: ['1', '2', '5', '6']
+Total distance: 3","Shortest path: ['1', '3']
+Total distance: 1","Shortest path: ['3', '5', '6']
+Total distance: 2",source distance == FI1 distance + FI2 distance,PASS
+M44,MTG8,Not Equivalent,"SI=3.0, FI1=1.0, FI2=2.0","Shortest path: ['M', 'O', 'P', 'Q']
+Total distance: 3","Shortest path: ['M', 'O']
+Total distance: 1","Shortest path: ['O', 'P', 'Q']
+Total distance: 2",source distance == FI1 distance + FI2 distance,PASS
+M44,MTG9,Not Equivalent,"SI=3.0, FI1=2.0, FI2=2.0","Shortest path: ['S', 'A', 'D', 'T']
+Total distance: 3","Shortest path: ['S', 'B', 'C']
+Total distance: 2","Shortest path: ['C', 'D', 'T']
+Total distance: 2",source distance ≠ FI1 distance + FI2 distance,FAIL
+M44,MTG10,Not Equivalent,"SI=2.0, FI1=1.0, FI2=2.0","Shortest path: ['X', 'B', 'Y']
+Total distance: 2","Shortest path: ['X', 'A']
+Total distance: 1","Shortest path: ['A', 'C', 'Y']
+Total distance: 2",source distance ≠ FI1 distance + FI2 distance,FAIL
+M45,MTG6,Not Equivalent,"SI=11.0, FI1=8.0, FI2=3.0","Shortest path: ['A', 'D', 'E', 'G']
+Total distance: 11.0","Shortest path: ['A', 'D', 'E']
+Total distance: 8.0","Shortest path: ['E', 'G']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M45,MTG7,Not Equivalent,"SI=5.0, FI1=2.0, FI2=3.0","Shortest path: ['1', '3', '4', '6']
+Total distance: 5.0","Shortest path: ['1', '3']
+Total distance: 2.0","Shortest path: ['3', '4', '6']
+Total distance: 3.0",source distance == FI1 distance + FI2 distance,PASS
+M45,MTG8,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['M', 'N', 'O', 'P', 'Q']
+Total distance: 8.0","Shortest path: ['M', 'N', 'O']
+Total distance: 3.0","Shortest path: ['O', 'P', 'Q']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M45,MTG9,Not Equivalent,"SI=8.0, FI1=3.0, FI2=5.0","Shortest path: ['S', 'A', 'C', 'D', 'T']
+Total distance: 8.0","Shortest path: ['S', 'A', 'C']
+Total distance: 3.0","Shortest path: ['C', 'D', 'T']
+Total distance: 5.0",source distance == FI1 distance + FI2 distance,PASS
+M45,MTG10,Not Equivalent,"SI=9.0, FI1=3.0, FI2=6.0","Shortest path: ['X', 'A', 'B', 'Y']
+Total distance: 9.0","Shortest path: ['X', 'A']
+Total distance: 3.0","Shortest path: ['A', 'B', 'Y']
+Total distance: 6.0",source distance == FI1 distance + FI2 distance,PASS

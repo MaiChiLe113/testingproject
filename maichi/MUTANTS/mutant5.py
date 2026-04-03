@@ -1,6 +1,13 @@
-"""MUTANT 5 | Arithmetic Operator Replacement | Line 37: '+' changed to '-'"""
+"""MUTANT 5 | Arithmetic Operator Replacement | Line 44: '+' changed to '-'"""
 from collections import deque
+#Handle negative value
+import re
 
+def parse_distance(output: str) -> float:
+    match = re.search(r"Total distance:\s*([+-]?\d+(?:\.\d+)?)", output)
+    if not match:
+        raise ValueError("Could not parse distance from output")
+    return float(match.group(1))
 INFINITY = float("inf")
 
 class Graph:

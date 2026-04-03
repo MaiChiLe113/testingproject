@@ -1,0 +1,6 @@
+Q P 4
+S R 2
+R P 1
+T S 3
+S P 10
+T Q 5
